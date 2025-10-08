@@ -1,0 +1,88 @@
+{
+    "kind": "collectionType",
+    "collectionName": "recipes",
+    "info": {
+        "singularName": "recipe",
+        "pluralName": "recipes",
+        "displayName": "Recipe"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {
+        "i18n": {
+            "localized": true
+        }
+    },
+    "attributes": {
+        "title": {
+            "type": "string",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "required": true
+        },
+        "description": {
+            "type": "text",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "required": true
+        },
+        "steps": {
+            "type": "blocks",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "required": true
+        },
+        "tag": {
+            "type": "enumeration",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "required": true,
+            "enum": [
+                "boozy",
+                "refreshing",
+                "mocktail",
+                "batch",
+                "warm",
+                "shot"
+            ]
+        },
+        "image": {
+            "type": "media",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "multiple": false,
+            "required": true,
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ]
+        },
+        "ingredients": {
+            "type": "blocks",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "required": true
+        }
+    }
+}
