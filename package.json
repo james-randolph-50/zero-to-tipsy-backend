@@ -16,6 +16,7 @@
     "postinstall": "chmod +x ./node_modules/.bin/strapi || true"
   },
   "dependencies": {
+    "@strapi/strapi": "5.25.0",
     "@strapi/plugin-cloud": "5.25.0",
     "@strapi/plugin-users-permissions": "5.25.0",
     "@strapi/provider-upload-cloudinary": "^5.26.0",
